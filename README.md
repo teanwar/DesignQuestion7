@@ -6,7 +6,7 @@ A retail store manager wants to efficiently let customers check out in the quick
 
 
 My Answer:
-Data structure choice: I used "LinkedList" for storing people in lines. This type is a Doubly linked list, therefore access to the first and last item of the list is in constant time. Therefore, this structure is efficient for lines with multiple insert in remove from both ends.
+I used "LinkedList" for storing people in lines. This type is a Doubly linked list, therefore access to the first and last item of the list is in constant time. Therefore, this structure is efficient for lines with multiple insert in remove from both ends.
 In this problem the store could have multiple lines, each for persons with a specified range for number of items they bought. Since I needed to access different lines, multiple time during the execution of the program the best data structure for keeping the lines was ArrayList. The ArrayList in provides constant time access to element at index i (whereas the LinkedList needs O(n) operation). I created an ArrayList of lines each is a LinkedList.
 I also created the class Person to get easy access to the properties of a person.
 
